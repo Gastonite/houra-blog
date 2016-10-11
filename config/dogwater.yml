@@ -1,0 +1,6 @@
+adapters:
+  memory: sails-memory
+
+connections:
+  default:
+    adapter: memory

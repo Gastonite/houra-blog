@@ -1,0 +1,19 @@
+{
+  "name": "houra-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".houra.yml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gastonite/houra-blog.git"
+  },
+  "author": "Clément Pasquier <clement@n00sphere.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gastonite/houra-blog/issues"
+  },
+  "homepage": "https://github.com/Gastonite/houra-blog#readme"
+}

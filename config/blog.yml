@@ -1,0 +1,16 @@
+adapters:
+  mongo: sails-mongo
+
+connections:
+  db:
+    adapter: mongo
+    host: localhost
+    port: 27017
+    database: blog
+
+models:
+  - ./post
+
+resource:
+  controller: post
+  path: /post
