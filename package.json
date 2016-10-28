@@ -2,18 +2,20 @@
   "name": "houra-blog",
   "version": "1.0.0",
   "description": "",
-  "main": ".houra.yml",
+  "main": "index.js",
   "scripts": {
+    "start": "node lib/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gastonite/houra-blog.git"
   },
   "author": "Clément Pasquier <clement@n00sphere.net>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gastonite/houra-blog/issues"
+  "dependencies": {
+    "h2o2": "^5.4.0",
+    "hapi-auth-cookie": "^6.1.1",
+    "houra": "git+https://github.com/Gastonite/houra.git#master",
+    "houra-data": "git+https://github.com/Gastonite/houra-data.git#master",
+    "houra-web": "git+https://github.com/Gastonite/houra-web.git#master",
+    "jade": "^1.11.0"
   },
-  "homepage": "https://github.com/Gastonite/houra-blog#readme"
+  "devDependencies": {}
 }

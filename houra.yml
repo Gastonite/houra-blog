@@ -1,0 +1,40 @@
+id: blog
+
+from:
+  - web
+  - data
+
+steps:
+  - hapi-auth-cookie
+  - ./auth
+  - vision
+  - inert
+  - ./static
+  - h2o2
+  - ./views
+  - dogwater:data
+  - resource:data as post
+
+
+connections:
+  web:
+    host: localhost
+    port: 8080
+    plugins:
+      - hapi-auth-cookie
+      - auth
+      - inert
+      - vision
+      - static
+      - h2o2
+      - views
+
+  admin:
+    host: localhost
+    port: 8081
+    plugins:
+      - dogwater
+      - post
+
+structure:
+  templates: views

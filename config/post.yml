@@ -7,10 +7,11 @@ connections:
     host: localhost
     port: 27017
     database: blog
+    schema: true
 
 models:
   - ./post
 
 resource:
-  controller: post
+#  controller: post
   path: /post

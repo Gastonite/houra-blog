@@ -1,0 +1,31 @@
+h1 Blog
+nav
+  li
+    a(href=(user ? '/signout' : '/signin'))= (user ? 'Sign out' : 'Sign in')
+
+
+pre user: !{JSON.stringify(user, null, 2)}
+
+if user
+  form(action='/post', method='post')
+    div
+      label title:
+      input(name='title' required)
+    div
+      label published:
+      input(name='published' type='datetime' required)
+    div
+      label content:
+      textarea(name='content' required)
+    button(type='submit') Create post
+
+
+for item, i in posts
+  article
+    header
+      h1= item.title
+
+    !{item && item.content || ''}
+
+    footer
+      small= item.published
